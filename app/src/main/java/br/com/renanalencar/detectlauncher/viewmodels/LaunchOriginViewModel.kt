@@ -60,13 +60,6 @@ class LaunchOriginViewModel(application: Application) : AndroidViewModel(applica
         updateOrigin(LaunchOrigin.RETURNED_FROM_BACK)
     }
 
-    //    private fun updateOrigin(newOrigin: LaunchOrigin) {
-//        val updated = _metadata.value.copy(origin = newOrigin)
-//        _metadata.value = updated
-//        viewModelScope.launch {
-//            LaunchOriginDataStore.saveMetadata(context, updated)
-//        }
-//    }
     private fun updateOrigin(newOrigin: LaunchOrigin) {
         val current = _metadata.value
 
